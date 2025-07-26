@@ -1,6 +1,6 @@
 # Code_ace
 
-*An AI-powered coding platform with integrated interview preparation*
+**An AI-powered coding platform with integrated interview preparation**
 
 Code_ace is a web application that enables users to practice coding challenges, prepare for technical interviews, and leverage AI-driven assistance. Built with a Node.js/Express backend and a React frontend, the platform offers problem management, live coding, AI hints, and a customizable interview simulator.
 
@@ -28,7 +28,7 @@ Code_ace is a web application that enables users to practice coding challenges, 
 
 ## Repository Structure
 
-
+```
 Code_ace/
 │
 ├── BackendContest/      # AI interview question generator module
@@ -55,30 +55,30 @@ Code_ace/
 │   └── tailwind.config.js
 │
 └── CODE.docx            # Detailed design and requirements document
-
+```
 
 
 ## Installation
 
-1. *Clone the repository*
+1. **Clone the repository**
 
-bash
+```bash
 git clone https://github.com/sandeep131431/Code_ace.git
 cd Code_ace
+```
 
+2. **Configure environment variables**
+Create a `.env` file in `backend/` with:
 
-2. *Configure environment variables*
-Create a .env file in backend/ with:
-
-
+```
 MONGO_URI=<Your MongoDB connection string>
 JWT_SECRET=<Your JWT secret>
 OPENAI_API_KEY=<Your OpenAI API key>
+```
 
+3. **Install dependencies**
 
-3. *Install dependencies*
-
-bash
+```bash
 # Backend
 cd backend
 npm install
@@ -86,12 +86,12 @@ npm install
 # Frontend
 cd ../frontend
 npm install
+```
 
-
-4. *Run the application*
+4. **Run the application**
 In separate terminals:
 
-bash
+```bash
 # Start backend (port 5000)
 cd backend
 npm start
@@ -99,34 +99,34 @@ npm start
 # Start frontend (port 3000)
 cd ../frontend
 npm start
+```
 
-
-5. *Access the app*
+5. **Access the app**
 Open http://localhost:3000 in your browser.
 
 ## Usage
 
-1. *Register or log in.*
-2. *Select a coding challenge* by topic or difficulty.
-3. *Write and run code* in the integrated editor with AI hints.
-4. *Simulate an interview* with timed questions and review feedback.
-5. *View analytics* on your progress and revisit unsolved problems.
+1. **Register or log in.**
+2. **Select a coding challenge** by topic or difficulty.
+3. **Write and run code** in the integrated editor with AI hints.
+4. **Simulate an interview** with timed questions and review feedback.
+5. **View analytics** on your progress and revisit unsolved problems.
 
 ## Testing
 
-- *Backend tests* use Jest and Supertest:
+- **Backend tests** use Jest and Supertest:
 
-bash
+```bash
 cd backend
 npm test
+```
 
+- **Frontend tests** can be run via:
 
-- *Frontend tests* can be run via:
-
-bash
+```bash
 cd frontend
 npm test
-
+```
 
 
 ## Contributing
